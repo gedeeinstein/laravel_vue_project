@@ -1,0 +1,18 @@
+.accordion {
+    &.sheet-accordion {
+        margin-left: -1.3125rem;
+        margin-right: -1.3125rem;
+        border-radius: 0;
+
+        @include breakpoint-up( md ){
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        @include breakpoint-down( sm ){
+            & > .card {
+                border-radius: 0;
+            }
+        }
+    }
+}

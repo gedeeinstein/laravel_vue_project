@@ -1,0 +1,20 @@
+.project-sheets {
+
+    .plan-section, .expense-row {
+        $color-highlight: #4cb34c;
+        position: relative;
+
+        &:before {
+            opacity: 0; content: '';
+            width: .125rem; position: absolute; 
+            left: 0; top: 0; bottom: 0;
+            background-color: $color-highlight;
+        }
+
+        &.highlighted {
+            background-color: lighten( $color-highlight, 46% );
+            &:before { opacity: 1 }
+        }
+    }
+
+}

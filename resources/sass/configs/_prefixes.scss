@@ -1,0 +1,24 @@
+// main: _main.scss
+
+// ==========================================================================
+// CSS vendor prefixes
+// --------------------------------------------------------------------------
+// Comma separated prefixes to be used in transform and transition
+// related properties. Currently in mid 2018 we believe transition
+// properties no longer require vendor prefixes, however we are still
+// supporting webkit prefixes for transform related properties.
+//
+// In the future if you would like to omit the prefixes simply override
+// this config in the "_default.scss" file with blank list, like blow:
+//		$prefix-transform : ();
+// --------------------------------------------------------------------------
+
+// --------------------------------------------------------------------------
+$prefix-transition			: () !default;	// No longer requires prefixes
+$prefix-transform			: ( webkit ) !default;
+$prefix-perspective			: ( webkit ) !default;
+// --------------------------------------------------------------------------
+$prefix-animation			: ( webkit ) !default;
+// --------------------------------------------------------------------------
+
+// ==========================================================================

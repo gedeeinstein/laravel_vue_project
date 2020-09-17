@@ -1,0 +1,14 @@
+.nav-tabs {
+    .nav-link {
+        @include hover-focus {
+            border-color: transparent;
+        }
+
+        &.active {
+            border-color: #dee2e6 #dee2e6 #ffffff;
+            @include hover-focus {
+                border-color: #dee2e6 #dee2e6 #ffffff;
+            }
+        }
+    }
+}

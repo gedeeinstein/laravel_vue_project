@@ -1,0 +1,7 @@
+.tooltip {
+    &.tooltip-offset-left {
+        .arrow, .tooltip-inner {
+            @include translateX( -5rem );
+        }
+    }
+}

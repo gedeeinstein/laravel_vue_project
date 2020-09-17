@@ -1,0 +1,15 @@
+.page-item {
+    &.active.disabled {
+        .page-link {
+            color: #fff;
+        }
+    }
+}
+
+.page-link {
+    @include transition( color .2s, background-color .2s );
+    @include focus {
+        @include box-shadow( none !important );
+    }
+}
+

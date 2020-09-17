@@ -1,0 +1,77 @@
+$screens: 'xs', 'sm', 'md', 'lg';
+$columns: 32px, 50px, 64px, 75px, 80px, 90px, 100px, 112px, 120px, 125px, 128px, 150px, 175px, 180px, 200px, 225px, 250px, 256px, 280px, 300px, 320px,
+    340px, 350px, 360px, 380px, 400px, 460px, 480px, 500px, 520px, 560px, 580px, 600px;
+$selectors: ();
+
+@for $screenIndex from 1 through length( $screens ){
+    $screen: nth( $screens, $screenIndex );
+    @for $columnIndex from 1 through length( $columns ){
+        $column: nth( $columns, $columnIndex );
+        @if 'xs' == $screen {
+            $selectors: append( $selectors, '.col-#{$column}' );
+        } @else {
+            $selectors: append( $selectors, '.col-' +$screen+ '-' +$column );
+        }
+    }
+}
+
+$selectors: join( $selectors, (), comma );
+
+#{$selectors} {
+    width: 100%;
+    position: relative;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+// @error $selectors;
+
+//  {
+//     position: relative;
+//     padding-left: 7.5px;
+//     padding-right: 7.5px;
+// }
+
+@each $column in $columns {
+    .col-#{$column} {
+        max-width: rem( $column );
+        @include flex( 0 0 rem( $column ));
+    }
+}
+
+@include breakpoint-up( sm ){
+    @each $column in $columns {
+        .col-sm-#{$column} {
+            max-width: rem( $column );
+            @include flex( 0 0 rem( $column ));
+        }
+    }
+}
+
+@include breakpoint-up( md ){
+    @each $column in $columns {
+        .col-md-#{$column} {
+            max-width: rem( $column );
+            @include flex( 0 0 rem( $column ));
+        }
+    }
+}
+
+@include breakpoint-up( lg ){
+    @each $column in $columns {
+        .col-lg-#{$column} {
+            max-width: rem( $column );
+            @include flex( 0 0 rem( $column ));
+        }
+    }
+}
+
+@include breakpoint-up( xl ){
+    @each $column in $columns {
+        .col-xl-#{$column} {
+            max-width: rem( $column );
+            @include flex( 0 0 rem( $column ));
+        }
+    }
+}
+

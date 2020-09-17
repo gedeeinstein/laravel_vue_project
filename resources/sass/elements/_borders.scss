@@ -1,0 +1,25 @@
+.border-integer {
+    &:focus {
+        border: 1px solid #D9EAD3 !important;
+    }
+}
+.border-decimal {
+    &:focus {
+        border: 1px solid #A4C2F4 !important;
+    }
+}
+.border-money {
+    &:focus {
+        border: 1px solid #CFE2F3 !important;
+    }
+}
+.border-date {
+    &:focus {
+        border: 1px solid #F4CCCC !important;
+    }
+}
+.border-suggest {
+    &:focus {
+        border: 1px solid #D9D2E9 !important;
+    }
+}

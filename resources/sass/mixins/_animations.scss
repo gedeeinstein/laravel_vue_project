@@ -1,0 +1,75 @@
+// main: _main.scss
+
+// ==========================================================================
+// 	Animations
+// --------------------------------------------------------------------------
+
+// --------------------------------------------------------------------------
+// Keyframes
+// --------------------------------------------------------------------------
+@mixin keyframes( $animation ){
+	@-webkit-keyframes #{$animation} {
+        @content;
+	}
+	@-moz-keyframes #{$animation} {
+        @content;
+    }
+    @keyframes #{$animation} {
+        @content;
+    }
+}
+// --------------------------------------------------------------------------
+
+// --------------------------------------------------------------------------
+// Animations
+// --------------------------------------------------------------------------
+@mixin animation( $animation ){
+	@include prefixer( animation, $animation, $prefix-animation );
+}
+// --------------------------------------------------------------------------
+@mixin animation-name( $name ){
+	@include prefixer( animation-name, $name, $prefix-animation );
+}
+// --------------------------------------------------------------------------
+@mixin animation-delay( $delay ){
+	@include prefixer( animation-delay, $delay, $prefix-animation );
+}
+// --------------------------------------------------------------------------
+@mixin animation-duration( $duration ){
+	@include prefixer( animation-duration, $duration, $prefix-animation );
+}
+// --------------------------------------------------------------------------
+@mixin animation-direction( $direction ){
+	@include prefixer( animation-direction, $direction, $prefix-animation );
+}
+// --------------------------------------------------------------------------
+@mixin animation-iteration-count( $iteration ){
+	@include prefixer( animation-iteration-count, $iteration, $prefix-animation );
+}
+// --------------------------------------------------------------------------
+@mixin animation-timing-function( $function ){
+	@include prefixer( animation-timing-function, $function, $prefix-animation );
+}
+// --------------------------------------------------------------------------
+@mixin animation-fill-mode( $mode ){
+	@include prefixer( animation-fill-mode, $mode, $prefix-animation );
+}
+// --------------------------------------------------------------------------
+@mixin animation-play-state( $state ){
+	@include prefixer( animation-play-state, $state, $prefix-animation );
+}
+// --------------------------------------------------------------------------
+
+// --------------------------------------------------------------------------
+// Aliases - shortcuts
+// --------------------------------------------------------------------------
+@mixin animation-repeat( $repeat ){
+	@include animation-iteration-count( $repeat );
+}
+// --------------------------------------------------------------------------
+@mixin animation-easing( $easing ){
+	@include animation-timing-function( $easing );
+}
+// --------------------------------------------------------------------------
+
+// ==========================================================================

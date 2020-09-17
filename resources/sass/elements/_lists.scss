@@ -1,0 +1,29 @@
+.list-bullet {
+    .bullet {
+        position: relative;
+        &:before {
+            font-weight: 400;
+            font-family: "Font Awesome 5 Pro";
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+
+            left: -2.375rem;
+            content: "\f0c8";
+            font-size: 70%;
+            
+            @include flexbox;
+            @include align-items( center );
+        }
+
+        &.checked {
+            &:before { 
+                font-weight: 700;
+                content: "\f0c8"
+            }
+        }
+    }
+}

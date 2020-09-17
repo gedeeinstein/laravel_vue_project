@@ -1,0 +1,15 @@
+/bootstrap/cache/*.php
+/.*
+/node_modules
+/storage
+storage/*
+/vendor/*
+/public/storage
+public/storage
+/public/storage/*
+public/storage/*
+public/reports/output/*
+/public/reports/output/*
+bitbucket-pipelines.yml
+deployment-exclude-list.txt
+yarn.lock

@@ -1,0 +1,65 @@
+.project-entries {
+    min-height: 15rem;
+    $border: 1px solid #ddd;
+    $border-placeholder: 1px solid #eee;
+    
+    .project-entry {
+        border: $border;
+        border-right: 0;
+
+        .column {
+            border-top: $border;
+            border-right: $border;
+
+            @include breakpoint-up(lg){
+                border-top: 0;
+            }
+        }
+
+        .column-xl {
+            border-top: $border;
+            border-right: $border;
+
+            @include breakpoint-up(xl){
+                border-top: 0;
+            }
+        }
+
+        .entry-content, .entry-detail, .entry-controls {
+            border-top: 0;
+
+            @include breakpoint-up(lg){
+                border-top: $border;
+            }
+        }
+
+        &.placeholder {
+            border: $border-placeholder;
+            border-right: 0;
+
+            .column {
+                border-top: $border-placeholder;
+                border-right: $border-placeholder;
+
+                @include breakpoint-up(lg){
+                    border-top: 0;
+                }
+            }
+
+            .column-xl {
+                border-top: $border-placeholder;
+                border-right: $border-placeholder;
+
+                @include breakpoint-up(xl){
+                    border-top: 0;
+                }
+            }
+
+            .entry-content, .entry-detail, .entry-controls {
+                @include breakpoint-up(lg){
+                    border-top: $border-placeholder;
+                }
+            }
+        }
+    }
+}

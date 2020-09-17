@@ -1,0 +1,67 @@
+.btn {
+    &.btn-accordion {
+        font-size: .875rem;
+        @include hover-active {
+            text-decoration: underline;
+        }
+    }
+}
+
+.btn-input-group {
+    color: #495057;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+
+    &.btn-dimmed {
+        color: lighten( #6c757d, 20% );
+        background-color: #fff;
+
+        @include not-disabled {
+            @include hover-active {
+                color: #6c757d;
+            }
+        }
+    }
+}
+
+.btn-slim {
+    min-width: 4.5rem;
+    padding: .25rem .625rem;
+
+    @include breakpoint-up( sm ){
+        min-width: 7.5rem;
+    }
+
+    @include breakpoint-up( lg ){
+        height: 100%;
+        padding-left: .375rem;
+        padding-right: .375rem;
+        min-width: 0; height: 100%;
+        border: none; border-radius: 0;
+    }
+}
+
+.btn-gray {
+    $background-color: #eee;
+    border: 1px solid #ddd;
+    background-color: $background-color;
+
+    @include not-disabled {
+        @include hover-focus {
+            background-color: lighten( $background-color, 2% );
+        }
+    }
+
+    @include breakpoint-up( lg ){
+        border: none;
+    }
+}
+
+.btn-page {
+    @include breakpoint-down( md ){
+        line-height: 1.5;
+        font-size: .875rem;
+        padding: 0.25rem .625rem;
+        border-radius: 0.2rem;
+    }
+}

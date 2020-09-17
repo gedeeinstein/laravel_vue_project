@@ -1,0 +1,135 @@
+// main: _main.scss
+
+// ==========================================================================
+// 	Buttons
+// --------------------------------------------------------------------------
+
+// Extend button styles
+// --------------------------------------------------------------------------
+@mixin extend-button( $button: ()){
+
+	// Background color
+	$background: map-get( $button, background );
+	background-color: $background;
+
+	// Text color
+	// ----------------------------------------------------------------------
+	@if( map-has-key( $button, color )){
+		color: map-get( $button, color );
+	} @else {
+		color: #ffff;
+	}
+	// ----------------------------------------------------------------------
+
+	// Border color
+	// ----------------------------------------------------------------------
+	@if( map-has-key( $button, border-color )){
+		border-color: map-get( $button, border-color );
+	} @else {
+		border-color: map-get( $button, background );
+	}
+	// ----------------------------------------------------------------------
+
+	// On hover and focus
+	// ----------------------------------------------------------------------
+	@include hover-focus(){
+
+		// Text color
+		// ------------------------------------------------------------------
+		@if( map-has-key( $button, hover-color )){
+			color: map-get( $button, hover-color );
+		} @else {
+			@if( map-has-key( $button, color )){
+				color: map-get( $button, color );
+			}
+		}
+		// ------------------------------------------------------------------
+
+		// Border color
+		// ------------------------------------------------------------------
+		@if( map-has-key( $button, hover-border-color )){
+			border-color: map-get( $button, hover-border-color );
+		} @else {
+			@if( map-has-key( $button, border-color )){
+				border-color: map-get( $button, border-color );
+			} @else {
+				border-color: map-get( $button, hover-background );
+			}
+		}
+		// ------------------------------------------------------------------
+
+		// Background color
+		// ------------------------------------------------------------------
+		@if( map-has-key( $button, hover-background )){
+			background-color: map-get( $button, hover-background );
+		} @else {
+			background-color: darken( $background, 5% );
+		}
+		// ------------------------------------------------------------------
+	}
+	// ----------------------------------------------------------------------
+
+	// On active if NOT disabled
+	// ----------------------------------------------------------------------
+	@include not-disabled(){
+		@include active(){
+
+			// Text color
+			// --------------------------------------------------------------
+			@if( map-has-key( $button, active-color )){
+				color: map-get( $button, active-color );
+			} @else {
+				@if( map-has-key( $button, hover-color )){
+					color: map-get( $button, hover-color );
+				} @else {
+					@if( map-has-key( $button, color )){
+						color: map-get( $button, color );
+					}
+				}
+			}
+			// --------------------------------------------------------------
+
+			// Background color
+			// --------------------------------------------------------------
+			@if( map-has-key( $button, active-background )){
+				background-color: map-get( $button, active-background );
+			} @else {
+				background-color: darken( $background, 10% );
+			}
+			// --------------------------------------------------------------
+
+			// Border color
+			// --------------------------------------------------------------
+			@if( map-has-key( $button, active-border-color )){
+				border-color: map-get( $button, active-border-color );
+			} @else {
+				@if( map-has-key( $button, hover-border-color )){
+					border-color: map-get( $button, hover-border-color );
+				} @else {
+					@if( map-has-key( $button, border-color )){
+						border-color: map-get( $button, border-color );
+					} @else {
+						@if( map-has-key( $button, active-background )){
+							border-color: map-get( $button, active-background );
+						} @else {
+							border-color: darken( $background, 10% );
+						}
+					}
+				}
+			}
+			// --------------------------------------------------------------
+
+			// On focus
+			// --------------------------------------------------------------
+			@include focus(){
+				@if( map-has-key( $button, active-box-shadow )){
+					box-shadow: map-get( $button, active-box-shadow );
+				} @else {
+					box-shadow: none;
+				}
+			}
+			// --------------------------------------------------------------
+		}
+	}
+}
+// ==========================================================================

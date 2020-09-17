@@ -1,0 +1,185 @@
+.nav-tabs {
+    .nav-link {
+        position: relative;
+        @include transition( 
+            border-color .15s $easeOutExpo, 
+            background-color .15s $easeOutExpo,
+        );
+
+        $highlight: #17a2b8;
+
+        &:after {
+            position: absolute; content: ''; 
+            left: 0; right: 0; bottom: 0; 
+            width: 100%; height: .125rem;
+            background-color: $highlight;
+
+            @include scaleX( 0 );
+            @include transform-origin( center );
+            @include transition( transform .4s $easeOutExpo );
+        }
+
+        &.highlight {
+            // Does not look great with colored background
+            // background-color: lighten( $highlight, 50% );
+            &:after { @include scaleX( 1 )}
+            .btn-tab { color: darken( $highlight, 10% )}
+        }
+
+        .btn-tab {
+            max-width: 16rem;
+            font-size: .875rem;
+            padding: .5625rem .875rem;
+            @include ellipsis;
+        }
+        .dropdown-menu {
+            font-size: .875rem;
+            @include box-shadow( 0 0.5rem 1.5rem -0.75rem rgba( 0,0,0, 0.1 ));
+        }
+    }
+}
+
+.project-tabs {
+    .nav-tabs {
+        .nav-item {
+            margin-left: .1875rem;
+            margin-right: .1875rem;
+
+            .nav-link {
+                border-color: #e8e8e8;
+                padding: 0.5rem 1rem;
+                @include transition( color .15s, border-color .15s );
+
+                @include hover-active {
+                    border-color: #ccc;
+                    border-bottom-color: transparent;
+                }
+
+                &.active {
+                    border-color: #ccc;
+                    border-bottom-color: transparent;
+                }
+            }
+        }
+    }
+
+    @include breakpoint-down('md'){
+        .nav-tabs {
+            font-size: .875rem;
+            margin-top: -.375rem;
+            margin-bottom: -.375rem;
+
+            .nav-item {
+                padding-top: .375rem;
+                padding-bottom: .375rem;
+
+                @include flex-grow(1);
+                @include flex-shrink(0);
+
+                .nav-link {
+                    border-color: #ddd;
+                    border-radius: .25rem;
+                    padding: 0.375rem 0.75rem;
+                    background-color: #fafafa;
+
+                    @include hover {
+                        border: 1px solid #ccc;
+                    }
+
+                    &.active {
+                        font-weight: bold;
+                        border-color: #aaa;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.card-header {
+    &.card-header-tabs {
+        margin-left: 0; 
+        margin-right: 0;
+        margin-bottom: 0;
+        
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+        .nav-tabs {
+            padding: 0 1rem;
+        }
+
+        @include breakpoint-down('md'){
+            padding: .75rem 0;
+
+            .nav-tabs {
+                border: 0;
+                margin: -.25rem;
+                @include flexbox;
+
+                .nav-item {
+                    padding: .25rem;
+                    .nav-link {
+                        border: 1px solid #dee2e6;
+                        border-radius: .25rem;
+
+                        &.active {
+                            @include box-shadow( 0 .125rem .375rem -.25rem rgba( 0,0,0, .2 ));
+                        }
+
+                        .btn-tab {
+                            padding-top: .375rem;
+                            padding-bottom: .375rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include breakpoint-down('sm'){
+            .nav-tabs {
+                .nav-item {
+                    @include flex-grow(1);
+
+                    .nav-link {
+                        & > .btn-group {
+                            @include flexbox;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.compact-tabs {
+        padding: 0;
+
+        .nav-tabs {
+            .nav-item {
+                margin-top: -1px;
+            }
+            .nav-link {
+                border-radius: 0;
+                @include transition( none );
+
+                &.active {
+                    border: 1px solid #dee2e6;
+                }
+            }
+        }
+
+        @include breakpoint-down('md'){
+            padding: .75rem 0;
+
+            .nav-tabs {
+                .nav-link {
+                    &.active {
+                        border: 1px solid #dee2e6;
+                    }
+                }
+            }
+        }
+    }
+}

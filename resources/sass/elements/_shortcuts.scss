@@ -1,0 +1,10 @@
+.w-42 { width: 2.625rem !important }
+.w-180 { width: 11.25rem !important }
+
+.noselect {
+    @include user-select( none );
+}
+
+.cursor-pointer { cursor: pointer !important }
+
+.ellipsis { @include ellipsis }

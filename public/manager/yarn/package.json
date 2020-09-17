@@ -1,0 +1,19 @@
+{
+  "name": "port",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@yaireo/tagify": "^3.2.6",
+    "animejs": "^3.1.0",
+    "jquery-confirm": "^3.3.4",
+    "jquery-file-download": "^1.4.6",
+    "jquery-nice-select": "^1.1.0",
+    "jquery.easing": "^1.4.1",
+    "jquery.scrollto": "^2.1.2",
+    "js-file-downloader": "^1.1.8",
+    "mohithg-switchery": "^0.8.4",
+    "parsleyjs": "^2.9.2",
+    "q": "^1.5.1"
+  }
+}

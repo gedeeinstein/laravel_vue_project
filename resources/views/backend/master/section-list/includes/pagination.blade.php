@@ -1,0 +1,1 @@
+<pagination :meta="pagination" :config="config.pagination" :action="navigatePage" :loading="status.loading"></pagination>

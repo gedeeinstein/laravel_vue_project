@@ -1,0 +1,11 @@
+.sortable {
+    .sortable-item {
+        @include transition( background-color .15s ease-in );
+    }
+    .sortable-chosen {
+        background-color: #f6f6f6;
+    }
+}
+.draggable {
+    @include cursor-grab();
+}

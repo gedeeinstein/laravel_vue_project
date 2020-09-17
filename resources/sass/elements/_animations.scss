@@ -1,0 +1,27 @@
+@include keyframes( paste-in ){
+    0% { opacity: 0; @include translateY( -1.25rem )}
+    100% { opacity: 1; @include translateY( 0 )}
+}
+
+.paste-in, .paste-in-enter-active {
+    @include animation( paste-in .4s $easeOutQuart );
+}
+
+@include keyframes( paste-in-up ){
+    0% { opacity: 0; @include translateY( 1.25rem )}
+    100% { opacity: 1; @include translateY( 0 )}
+}
+
+.paste-in-up, .paste-in-up-enter-active {
+    @include animation( paste-in-up .4s $easeOutQuart );
+}
+
+
+@include keyframes( fade-in ){
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
+
+.fade-in, .fade-in-enter-active {
+    @include animation( fade-in .4s $easeOutQuart );
+}

@@ -1,0 +1,1476 @@
+/* override basic value*/
+
+a {
+    color: #17a2b8;
+}
+
+a:hover {
+    color: #374149;
+}
+
+body {
+    font-size: 0.9rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+/* start - navbar header */
+
+body .navbar {
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    background-color: #374149;
+    padding: 0.3rem 0.5rem;
+}
+
+body .navbar .navbar-brand {
+    border: solid 1px #fff;
+    border-radius: 5px;
+    width: 34px;
+    height: 34px;
+    display: block;
+    padding: 0px 0;
+    position: relative;
+}
+
+body .navbar .navbar-brand a {
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    top: 7px;
+    left: 0;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    line-height: 1;
+    color: #fff;
+}
+
+body .navbar .navbar-brand a .fas {
+    margin: 0;
+}
+
+body .navbar a.dropdown-item:hover {
+    background: #eee;
+}
+
+body .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+body .navbar a .fab,
+body .navbar a .fas {
+    margin-right: 3px;
+}
+
+body .card-header {
+    background-color: rgba(0, 0, 0, .03);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+
+/* end - navbar header */
+
+
+/* start - custom tab */
+
+body .nav-tabs .nav-item .nav-link {
+    padding-right: 1.5rem;
+}
+
+body .nav-tabs .nav-item .dropdown-toggle {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+body .nav-tabs .nav-item .dropdown-toggle:hover {
+    color: #17a2b8;
+}
+
+body .nav-tabs .nav-item .dropdown-menu .dropdown-item:hover {
+    background: #eee;
+}
+
+
+/* end - custom tab */
+
+
+/* start - custom table */
+
+body .cur-pointer {
+    cursor: pointer;
+}
+
+.table thead th,
+.table tbody th {
+    text-align: center;
+}
+
+.table thead th,
+.table thead td,
+.table tbody th,
+.table tbody td {
+    vertical-align: middle;
+}
+
+.table .user_name {
+    width: 120px;
+    white-space: nowrap;
+}
+
+.table .user_count {
+    width: 80px;
+}
+
+.table td.user_count {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.table .sort {
+    width: 80px;
+}
+
+.table td.sort {
+    text-align: center;
+}
+
+.form-group-table {
+    display: table;
+}
+
+.form-group-table .form-group-table-col {
+    display: table-cell;
+    width: auto;
+}
+
+.table td {
+    position: relative;
+}
+
+.table td .hover-controls {
+    right: 0;
+    position: absolute;
+}
+
+.table-small th,
+.table-small td {
+    font-size: 0.8rem;
+    font-weight: normal;
+    padding: 0.25rem 0.35rem;
+}
+
+.table-small th .form-group,
+.table-small td .form-group {
+    margin-bottom: 0.5em;
+}
+
+.table-small th .form-group:last-of-type,
+.table-small td .form-group:last-of-type {
+    margin-bottom: 0;
+}
+
+.table-small th .form-control,
+.table-small td .form-control {
+    width: auto;
+    max-width: 100%;
+    font-size: 0.8rem;
+    padding: 0.1rem 0.15rem;
+    display: inline-block;
+}
+
+.table-small th .form-control-1btn,
+.table-small td .form-control-1btn {
+    width: calc(100% - 20px);
+}
+
+.table-small th .form-control-2btn,
+.table-small td .form-control-2btn {
+    width: calc(100% - 40px);
+}
+
+.table-small th .form-control-3btn,
+.table-small td .form-control-3btn {
+    width: calc(100% - 60px);
+}
+
+.table-small th .form-control-w-xs,
+.table-small td .form-control-w-xs {
+    width: 30px;
+}
+
+.table-small th .form-control-w-sm,
+.table-small td .form-control-w-sm {
+    width: 40px;
+}
+
+.table-small th .form-control-w-ms,
+.table-small td .form-control-w-ms {
+    width: 50px;
+}
+
+.table-small th .form-control-w-md,
+.table-small td .form-control-w-md {
+    width: 70px;
+}
+
+.table-small th .form-control-w-lg,
+.table-small td .form-control-w-lg {
+    width: 80px;
+}
+
+.table-small th .form-control-w-xl,
+.table-small td .form-control-w-xl {
+    width: 110px;
+}
+
+.table-small thead th {
+    white-space: nowrap;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.table-whole-hover:hover {
+    background-color: #ffe;
+}
+
+.table-parcel-list {
+    table-layout: fixed;
+}
+
+.table-parcel-list td {
+    position: relative;
+}
+
+.table-parcel-list .row-control-buttons {
+    display: none;
+    position: absolute;
+    height: 1em;
+    top: 0;
+    right: -7px;
+    bottom: 0;
+    margin: auto;
+    font-size: 110%;
+    line-height: 1;
+    z-index: 1;
+}
+
+.table-parcel-list tr:hover .row-control-buttons,
+.parcel_building:hover .row-control-buttons {
+    display: block;
+}
+
+.parcel_address {
+    width: 150px;
+}
+
+.parcel_address select.form-control {
+    width: 100%;
+}
+
+.parcel_address input.form-control {
+    width: calc(100% - 20px);
+}
+
+.parcel_number {
+    width: 105px;
+}
+
+.parcel_land_category {
+    width: 90px;
+}
+
+.parcel_use_district {
+    width: 130px;
+}
+
+.parcel_project_owner {
+    width: 230px;
+}
+
+.parcel_buil_number {
+    width: 160px;
+}
+
+.parcel_buil_type {
+    width: 100px;
+}
+
+.parcel_buil_attach {
+    width: 80px;
+}
+
+.parcel_build_ratio {
+    width: 100px;
+}
+
+.parcel_floor_ratio {
+    width: 100px;
+}
+
+.parcel_buil_date {
+    width: 240px;
+}
+
+.parcel_buil_structure {
+    width: 257px;
+}
+
+.parcel_buil_roof {
+    width: 160px;
+}
+
+.parcel_risk {
+    border-top: 0 !important;
+    border-right: 0 !important;
+}
+
+.parcel_risk:first-child {
+    border-left: 0 !important;
+}
+
+.card+.incomplete_memo {
+    margin-top: 1em;
+}
+
+.a4 .table-small td i {
+    font-size: 0.9rem;
+}
+
+.a4 .totals .input-group-text {
+    font-size: 0.8rem;
+}
+
+.table tr.deleted th,
+.table tr.deleted td {
+    color: #ccc;
+}
+
+.table tr.clickable {
+    cursor: pointer;
+}
+
+.table tr.clickable:hover {
+    background: #f5f5f1;
+}
+
+.table .date {
+    width: 100px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.table .datetime {
+    width: 160px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.table .furigana {
+    color: #ccc;
+    font-size: 85%;
+}
+
+.table .user_name {
+    width: 90px;
+}
+
+.table .datetime {
+    width: 100px;
+}
+
+.table .datetime_full {
+    width: 200px;
+}
+
+.table td {
+    padding: 0.5rem 0.7rem;
+}
+
+.table td .row-actions {
+    min-height: 1em;
+    overflow: hidden;
+    color: #ddd;
+    font-size: 87%;
+    padding: 2px 0 0;
+    visibility: hidden;
+}
+
+.table td .row-actions .fas {
+    margin-right: 0.2em;
+}
+
+.table td .row-actions a.delete {
+    color: #dc3545;
+}
+
+.table td .row-actions a::after {
+    content: "|";
+    color: #ddd;
+    margin: 0 0.2em;
+}
+
+.table td .row-actions a:last-child::after {
+    display: none;
+}
+
+.table td:hover .row-actions {
+    visibility: visible;
+    width: auto;
+}
+
+.table td:hover .row-actions a {
+    text-decoration: none !important;
+}
+
+.table.lenders-table .branch_name {
+    width: 200px;
+    white-space: nowrap;
+}
+
+.table.lenders-table .status {
+    width: 80px;
+    white-space: nowrap;
+}
+
+.table.masters-table td,
+.table.masters-table th {
+    text-align: left;
+}
+
+.table.masters-table .id {
+    width: 50px;
+    white-space: nowrap;
+}
+
+.table.masters-table .type {
+    width: 80px;
+}
+
+.table.masters-table .key {
+    width: 80px;
+}
+
+.table.masters-table .sort {
+    width: 80px;
+}
+
+.table.masters-table .update {
+    width: 200px;
+}
+
+table.project-table {
+    width: 100%;
+}
+
+table.project-table thead tr th {
+    background: #eee;
+    text-align: center;
+}
+
+table.project-table tbody tr .no {
+    width: 80px;
+}
+
+table.project-table tbody tr .name {
+    font-size: 110%;
+    font-weight: bold;
+}
+
+table.project-table tbody tr .date {
+    width: 80px;
+    text-align: right;
+}
+
+table.project-table tbody tr .primary_operator {
+    width: 100px;
+    text-align: center;
+}
+
+table.project-table tbody tr .memo {
+    min-height: 2em;
+    position: relative;
+}
+
+table.project-table tbody tr .state-icons {
+    text-align: center;
+}
+
+table.project-table tbody tr .state-icons img {
+    width: 32px;
+    height: 32px;
+    border: none;
+}
+
+table.companies-table .name {
+    margin-right: 1em;
+}
+
+table.companies-table tr:first-child .furigana {
+    display: none;
+}
+
+table.companies-table td {
+    height: 4em;
+    vertical-align: top;
+}
+
+table.companies-table td .types {
+    float: right;
+    text-align: right;
+}
+
+table.company-users-table td .types {
+    float: right;
+    text-align: right;
+}
+
+table.users-table .company .badge {
+    margin: 0 2px;
+}
+
+table.users-table .type {
+    width: 100px;
+    white-space: nowrap;
+}
+
+table.users-table .status {
+    width: 80px;
+    white-space: nowrap;
+}
+
+table.areas-table .prefecture_code {
+    width: 70px;
+    white-space: nowrap;
+}
+
+table.areas-table .code {
+    width: 100px;
+    white-space: nowrap;
+}
+
+table.areas-table .sort {
+    width: 100px;
+    white-space: nowrap;
+}
+
+table.areas-table .cdc {
+    width: 100px;
+    white-space: nowrap;
+}
+
+body .table-hover tbody tr:hover {
+    background-color: #ffe;
+}
+
+.table tr.deleted th,
+.table tr.deleted td {
+    color: #ccc;
+}
+
+.table tr.clickable {
+    cursor: pointer;
+}
+
+.table tr.clickable:hover {
+    background: #f5f5f1;
+}
+
+.table .date {
+    width: 100px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.table .datetime {
+    width: 160px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.table .furigana {
+    color: #ccc;
+    font-size: 85%;
+}
+
+.table .user_name {
+    width: 90px;
+}
+
+.table .datetime {
+    width: 100px;
+}
+
+.table .datetime_full {
+    width: 200px;
+}
+
+.table td {
+    padding: 0.5rem 0.7rem;
+}
+
+.table td .row-actions {
+    min-height: 1em;
+    overflow: hidden;
+    color: #ddd;
+    font-size: 87%;
+    padding: 2px 0 0;
+    visibility: hidden;
+}
+
+.table td .row-actions .fas {
+    margin-right: 0.2em;
+}
+
+.table td .row-actions a.delete {
+    color: #dc3545;
+}
+
+.table td .row-actions a::after {
+    content: "|";
+    color: #ddd;
+    margin: 0 0.2em;
+}
+
+.table td .row-actions a:last-child::after {
+    display: none;
+}
+
+.table td:hover .row-actions {
+    visibility: visible;
+    width: auto;
+}
+
+.table td:hover .row-actions a {
+    text-decoration: none !important;
+}
+
+.table.lenders-table .branch_name {
+    width: 200px;
+    white-space: nowrap;
+}
+
+.table.lenders-table .status {
+    width: 80px;
+    white-space: nowrap;
+}
+
+.table.masters-table td,
+.table.masters-table th {
+    text-align: left;
+}
+
+.table.masters-table .id {
+    width: 50px;
+    white-space: nowrap;
+}
+
+.table.masters-table .type {
+    width: 80px;
+}
+
+.table.masters-table .key {
+    width: 80px;
+}
+
+.table.masters-table .sort {
+    width: 80px;
+}
+
+.table.masters-table .update {
+    width: 200px;
+}
+
+table.project-table {
+    width: 100%;
+}
+
+table.project-table thead tr th {
+    background: #eee;
+    text-align: center;
+}
+
+table.project-table tbody tr .no {
+    width: 80px;
+}
+
+table.project-table tbody tr .name {
+    font-size: 110%;
+    font-weight: bold;
+}
+
+table.project-table tbody tr .date {
+    width: 80px;
+    text-align: right;
+}
+
+table.project-table tbody tr .primary_operator {
+    width: 100px;
+    text-align: center;
+}
+
+table.project-table tbody tr .memo {
+    min-height: 2em;
+    position: relative;
+}
+
+table.project-table tbody tr .state-icons {
+    text-align: center;
+}
+
+table.project-table tbody tr .state-icons img {
+    width: 32px;
+    height: 32px;
+    border: none;
+}
+
+table.companies-table .name {
+    margin-right: 1em;
+}
+
+table.companies-table tr:first-child .furigana {
+    display: none;
+}
+
+table.companies-table td {
+    height: 4em;
+    vertical-align: top;
+}
+
+table.companies-table td .types {
+    float: right;
+    text-align: right;
+}
+
+table.company-users-table td .types {
+    float: right;
+    text-align: right;
+}
+
+table.users-table .company .badge {
+    margin: 0 2px;
+}
+
+table.users-table .type {
+    width: 100px;
+    white-space: nowrap;
+}
+
+table.users-table .status {
+    width: 80px;
+    white-space: nowrap;
+}
+
+table.areas-table .prefecture_code {
+    width: 70px;
+    white-space: nowrap;
+}
+
+table.areas-table .code {
+    width: 100px;
+    white-space: nowrap;
+}
+
+table.areas-table .sort {
+    width: 100px;
+    white-space: nowrap;
+}
+
+table.areas-table .cdc {
+    width: 100px;
+    white-space: nowrap;
+}
+
+.card-subheader01:not(:nth-child(1)) {
+    margin-top: 1.5em;
+}
+
+.card-subheader01 {
+    color: #fff;
+    background: #374149;
+    padding: 0.1rem;
+    position: relative;
+    width: 100%;
+}
+
+.card-subheader01 .form-check-label {
+    font-weight: 600;
+    color: #fff !important;
+}
+
+.card-subheader01 .totals .box label {
+    display: inline;
+}
+
+.card-subheader01 .totals .box .value {
+    display: inline;
+}
+
+.card-subheader01 .totals .box .unit {
+    margin-left: 0.25em;
+    font-size: 85%;
+}
+
+.card-subheader02 {
+    color: #fff;
+    background: #03316c;
+    padding: 0.4rem;
+    width: 100%;
+}
+
+
+/* end - custom table */
+
+.content-header h1.h1title {
+    font-size: 1.5rem !important;
+}
+
+.btn-warning {
+    color: #fff;
+}
+
+.page-item.active .page-link {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.page-link {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    color: #17a2b8;
+}
+
+.btn-warning:not(:disabled):not(.disabled):active,
+.btn-warning:not(:disabled):not(.disabled).active,
+.show>.btn-warning.dropdown-toggle {
+    color: #FFFFFF;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: '>\00a0';
+    color: #acacac;
+}
+
+li.breadcrumb-item {
+    font-size: 0.75rem;
+}
+
+div#alert-wrapper {
+    padding: 15px;
+}
+
+div#alert-wrapper ul,
+div#alert-wrapper ol {
+    margin-bottom: 0px;
+}
+
+.note-toolbar.panel-heading {
+    background: #efefef;
+}
+
+.image-preview {
+    width: 120px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.remove-image {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+body div#datatable_processing {
+    background: #000000ba;
+    color: #fff;
+    position: fixed;
+    top: 20% !important;
+    bottom: auto;
+}
+
+#basic-form .form-group {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    margin-bottom: 0px;
+    border-bottom: 1px dashed #eaeaea;
+}
+
+span.brand-text {
+    letter-spacing: 3px;
+}
+
+.btn-group-normal a {
+    margin: 0 3px;
+}
+
+.btn-group-normal .fa-edit {
+    margin-right: -4px;
+}
+
+.field-group.is-invalid {
+    border: 1px solid #dc3545;
+    padding-left: 10px;
+}
+
+.form-control.is-invalid {
+    background-image: none;
+}
+
+.actionDatatables {
+    min-width: 100px;
+}
+
+.img-lang {
+    width: 30px;
+}
+
+span.span-locale {
+    text-transform: uppercase;
+}
+
+
+/* Form */
+
+.label-required {
+    font-size: 8.5px;
+    top: -4px;
+    position: relative;
+    padding: 3px;
+}
+
+.field-title {
+    font-size: 17px;
+    display: block;
+}
+
+.error {
+    color: red;
+}
+
+
+/* Parsley */
+
+.parsley-errors-list {
+    list-style: none;
+    padding: 5px 0;
+    font-size: 12px;
+    color: #dc3545;
+}
+
+
+/* Datatables */
+
+.actionDatatables {
+    border-left: 1px solid #dee2e6 !important;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+}
+
+.card-header-link a {
+    margin-left: 10px;
+    float: right;
+}
+
+#datatable tbody tr>td:last-of-type {
+    text-align: center;
+}
+
+body #datatable_paginate {
+    padding-top: 0.8rem;
+}
+
+body #datatable_info {
+    padding-top: 1rem;
+}
+
+#datatable .group-table {
+    background-color: #eaeaea;
+}
+
+#datatable .group-table td {
+    text-align: left !important;
+    font-weight: bold;
+}
+
+.dataTables_scrollHead table.dataTable thead tr th {
+    border-bottom-width: 0;
+}
+
+.dataTables_scrollHead table.dataTable thead tr th[data-col="action"] {
+    border-bottom-width: .125rem;
+}
+
+.dataTables_scrollHead table.dataTable thead tr:last-child th {
+    border-bottom-width: .125rem;
+}
+
+.dataTables_scrollBody table.dataTable .control-buttons .btn {
+    font-size: .875rem;
+    padding: .3125rem 0.625rem;
+}
+
+.dataTables_scrollBody table.dataTable tbody th,
+.dataTables_scrollBody table.dataTable tbody td {
+    padding: .625rem 0.75rem;
+}
+
+.dataTables_paginate .pagination .paginate_button .page-link {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.form-control.form-control-reset:disabled,
+.form-control.form-control-reset[readonly] {
+    background-color: #fff;
+}
+
+.form-control.nice-select {
+    font-size: .875rem;
+    height: 2.375rem;
+    line-height: 1.6;
+    padding: .5rem 0;
+    padding-left: 1.125rem;
+    padding-right: 1.875rem;
+    min-width: 10rem;
+}
+
+.form-control.nice-select .list {
+    left: 0;
+    right: 0;
+    max-height: 25rem;
+    overflow: auto;
+}
+
+.form-control.tagify {
+    height: 5em;
+}
+
+.form-switch {
+    opacity: 0;
+}
+
+form .btn.btn-sm {
+    padding: 0.25rem;
+}
+
+form .btn.btn-wide {
+    min-width: 7.5rem;
+    max-width: 100%;
+}
+
+.breadcrumb li.breadcrumb-item {
+    font-size: .8125rem;
+}
+
+table.dataTable tbody td .row-controls {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+table.dataTable tbody tr:hover .row-controls {
+    opacity: 1;
+}
+
+table.dataTable tbody td .row-controls.separtor a:after {
+    content: "|";
+    color: #ddd;
+    margin: 0 0.4em;
+}
+
+.content [class*=icheck-]>input:first-child+input[type=hidden]+label::before,
+.content [class*=icheck-]>input:first-child+label::before {
+    border-radius: .1875rem;
+}
+
+.content .mx-datepicker .mx-icon-clear {
+    display: block !important
+}
+
+.content .mx-datepicker .mx-icon-clear~.mx-icon-calendar {
+    display: none !important
+}
+
+
+/**  初期表示 **/
+
+.rank-default {
+    color: #000;
+}
+
+.rank-registration,
+.rank-done,
+.rank-settled,
+.rank-paid {
+    color: #c00;
+}
+
+.rank-already,
+.rank-reserve,
+.rank-agree {
+    color: #00c;
+}
+
+.rank-purchase,
+.rank-sale {
+    color: #090;
+}
+
+.rank-information,
+.rank-notset {
+    color: #c0c;
+}
+
+.rank-pending,
+.rank-revenue,
+.rank-exclude {
+    color: #666;
+}
+
+
+/** Expense Sections**/
+
+.expense-caption {
+    width: 100%;
+    color: #fff;
+    background-color: #186A3B;
+    padding: 0.4rem;
+    margin-bottom: 0.4em;
+    position: relative;
+}
+
+.table-expense-list {
+    table-layout: fixed;
+    min-width: 1110px;
+}
+
+.table-expense-list .expense_name {
+    width: 12%;
+}
+
+.table-expense-list .expense_decided {
+    width: 10%;
+}
+
+.table-expense-list .expense_date,
+.table-expense-list .expense_paid {
+    width: 8%;
+}
+
+.table-expense-list .expense_budget,
+.table-expense-list .expense_payee,
+.table-expense-list .expense_note,
+.table-expense-list .expense_bank,
+.table-expense-list .expense_status {
+    width: 11%;
+}
+
+.table-expense-list .expense_period {
+    width: 6%;
+}
+
+.table-expense-list .expense_tax {
+    width: 4%;
+}
+
+td.position-relative .btn_overflow {
+    visibility: hidden;
+    position: absolute;
+    font-size: 1.1em;
+    padding-top: 6px;
+    right: -8px;
+}
+
+.table-small-x th,
+.table-small-x td {
+    font-size: 0.7rem;
+    font-weight: normal;
+    padding: 0.15rem 0.2rem;
+    vertical-align: middle;
+}
+
+.table-small-x th .form-group,
+.table-small-x td .form-group {
+    margin-bottom: 0.3em;
+}
+
+.table-small-x th .form-group:last-of-type,
+.table-small-x td .form-group:last-of-type {
+    margin-bottom: 0;
+}
+
+.table-small-x th .form-control,
+.table-small-x td .form-control {
+    width: auto;
+    max-width: 100%;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.1rem 0.35rem;
+    display: inline-block;
+    height: calc(1.5rem + 1px);
+}
+
+.table-small-x th .form-control-1btn,
+.table-small-x td .form-control-1btn {
+    width: calc(100% - 15px);
+}
+
+.table-small-x th .form-control-2btn,
+.table-small-x td .form-control-2btn {
+    width: calc(100% - 30px);
+}
+
+.table-small-x th .form-control-3btn,
+.table-small-x td .form-control-3btn {
+    width: calc(100% - 45px);
+}
+
+.table-small-x th .form-control-w-xs,
+.table-small-x td .form-control-w-xs {
+    width: 30px;
+}
+
+.table-small-x th .form-control-w-sm,
+.table-small-x td .form-control-w-sm {
+    width: 50px;
+}
+
+.table-small-x th .form-control-w-md,
+.table-small-x td .form-control-w-md {
+    width: 70px;
+}
+
+.table-small-x th .form-control-w-lg,
+.table-small-x td .form-control-w-lg {
+    width: 80px;
+}
+
+.table-small-x th .form-control-w-xl,
+.table-small-x td .form-control-w-xl {
+    width: 110px;
+}
+
+.table-small-x thead th {
+    white-space: nowrap;
+    padding: 2px 0 2px;
+}
+
+.table-small-x tbody tr:hover td:not(:first-child) {
+    background-color: rgba(201, 76, 76, 0.03);
+}
+
+.table-small-x tbody tr:hover td.position-relative .btn_overflow {
+    visibility: visible;
+}
+
+.bg-gray-expense {
+    background-color: #eee;
+}
+.bg-pink-expense {
+    background-color: #f8dddd !important;
+}
+.bg-pink-expense [class*=icheck-]>input:first-child+label::before {
+    border-color: rgb(182, 182, 182) !important;
+}
+.bg-orange-expense {
+    background-color: #ffcba4 !important;
+}
+.bg-orange-expense [class*=icheck-]>input:first-child+label::before {
+    border-color: rgb(182, 182, 182) !important;
+}
+
+.table-expense-list .mx-datepicker .mx-icon-clear {
+    display: none !important
+}
+.table-expense-list .mx-icon-calendar {
+    display: none !important
+}
+
+.expense-suggest .vs__open-indicator {
+    -webkit-transform: scale(0.6) !important;
+    transform: scale(0.6) !important;
+}
+.expense-suggest.vs--open .vs__open-indicator {
+    display: none !important;
+}
+.expense-suggest .vs__clear {
+    display: none;
+}
+.expense-suggest .vs__dropdown-menu {
+    border: none;
+    background-color: #e2dcee;
+}
+.expense-suggest .vs__selected-options {
+    flex-wrap: nowrap !important;
+}
+.expense-suggest .vs__selected {
+    white-space: nowrap !important;
+    padding: 0 !important;
+}
+.expense-suggest .vs__dropdown-toggle {
+    overflow: hidden;
+    border-color: #bfb3da;
+    background-color: #e2dcee;
+}
+
+.multiselect.expense-suggest {
+    height: calc(1.5rem + 1px) !important;
+    min-height: 0 !important;
+}
+.multiselect.expense-suggest, .multiselect__input, .multiselect__single {
+    font-size: 0.7rem !important;
+}
+.expense-suggest .multiselect__select {
+    display: none !important;
+}
+.expense-suggest .multiselect__tags {
+    min-height: 0 !important;
+    height: calc(1.5rem + 1px) !important;
+    padding: 1px !important;
+    font-size: 0.7rem !important;
+}
+.expense-suggest .multiselect__option {
+    min-height: 0 !important;
+    padding: 5px !important;
+}
+.expense-suggest .multiselect__single {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.expense-suggest .multiselect__input, .multiselect__single {
+    min-height: 0 !important;
+    margin-bottom: 0;
+}
+.expense-suggest .multiselect__content-wrapper {
+    width: auto !important;
+}
+
+.bg-light-gray {
+  background-color: #eeeeee !important;
+}
+
+.multiselect, .multiselect__single,
+.multiselect__tags, .multiselect__input {
+  background: #e2dcee !important;
+  border-color: #bfb3da !important;
+}
+.multiselect__content-wrapper {
+    font-size: 0.7rem !important;
+}
+.multiselect__clear {
+    position: absolute;
+    right: 41px;
+    height: 40px;
+    width: 40px;
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+}
+.multiselect__clear:before {
+    transform: rotate(45deg);
+}
+.multiselect__clear:after {
+    transform: rotate(-45deg);
+}
+.multiselect__clear:after, .multiselect__clear:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 16px;
+    background: #aaa;
+    top: 12px;
+    right: 4px;
+}
+
+.road-type-contents li::before {
+    content: "\25A1";
+    position: absolute;
+    left: -0em;
+    margin: auto;
+    height: 100%;
+}
+.road-type-contents li.checked::before {
+    content: "\25A0";
+}
+
+/* Master Finance */
+#master_finance_form .form-check-inline {
+    margin-right: 0.5rem;
+}
+#master_finance_form .parsley-errors-list {
+    font-size: 11px;
+}
+#master_finance_form .parsley-errors-list + .mx-icon-calendar {
+    top: 35% !important;
+}
+.table-contractor-list-loan {
+	table-layout: fixed;
+	min-width: calc(1110px - 2.50rem);
+}
+.table-contractor-list-loan .contractor {
+	width: 160px;
+}
+.table-contractor-list-loan .contractor_address {
+	width: 320px;
+}
+.table-contractor-list-loan .contractor_identification {
+	width: 140px;
+}
+.table-contractor-list-loan .contractor_building_guarantee {
+	width: auto;
+}
+.table-repayment-list {
+	table-layout: fixed;
+    width: calc(1110px - 2.50rem);
+}
+.table-repayment-list .form-control-1btn {
+    width: calc(100% - 20px);
+}
+.table-repayment-list .repayment_section {
+	width: 4%;
+}
+.table-repayment-list .repayment_money,
+.table-repayment-list .repayment_date,
+.table-repayment-list .repayment_loan_bookprice_reference {
+	width: 9%;
+}
+.table-repayment-list .repayment_loan_bookprice {
+	width: 10%;
+}
+.table-repayment-list .repayment_account {
+	width: 8%;
+}
+.table-repayment-list .repayment_note {
+	width: 15%;
+}
+.table-repayment-list .repayment_status {
+	width: 13%;
+}
+td.position-relative .btn-finance {
+    position: absolute;
+    font-size: 1.1em;
+    right: -8px;
+    top: 40%;
+}
+
+/* display first child of class filled error list date nengou  */
+.form-result.nengou .filled {
+    display: none;
+}
+.form-result.nengou ul.filled:first-child,
+ul:not(.filled) + ul.filled {
+    display: block !important;
+}

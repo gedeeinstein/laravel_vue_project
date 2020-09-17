@@ -1,0 +1,15 @@
+
+$color: #212529;
+$active-background: lighten( #dee2e6, 10% );
+
+.dropdown-item {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    @include transition( background-color .15s, color .15s );
+
+    &.active, &:active {
+        color: $color;
+        text-decoration: none;
+        background-color: $active-background;
+    }
+}

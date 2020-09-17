@@ -1,0 +1,15 @@
+.fade-enter-active, .fade-leave-active {
+    @include transition( opacity .4s );
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+.preloader-leave-active {
+    @include transition( opacity .4s $easeOutQuart );
+}
+
+.preloader-leave-to {
+    opacity: 0;
+}

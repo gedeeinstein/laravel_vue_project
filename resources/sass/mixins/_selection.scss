@@ -1,0 +1,26 @@
+// main: _main.scss
+
+// ==========================================================================
+// Selection
+// --------------------------------------------------------------------------
+
+// --------------------------------------------------------------------------
+@mixin user-select( $selection ){
+	-webkit-touch-callout: $selection;
+	  -webkit-user-select: $selection;
+		 -moz-user-select: $selection;
+	  	  -ms-user-select: $selection;
+			  user-select: $selection;
+}
+// --------------------------------------------------------------------------
+@mixin no-select(){
+	@include user-select(none);
+}
+// --------------------------------------------------------------------------
+
+@mixin font-smoothing(){
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// ==========================================================================
